@@ -271,6 +271,9 @@ a span {
   .links li {
     opacity: 0;
   }
+  .logo {
+      margin-top:9px;
+  }
   .burger {
     display: block;
     margin-top: -5px;
@@ -361,7 +364,7 @@ footer {
 .nav-active {
   position: absolute;
   right: 0px;
-  height: 32vh;
+  height: 28vh;
   top: 8vh;
   background-color: rgba(255, 255, 255, 0.3);
   display: flex;
