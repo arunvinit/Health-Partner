@@ -193,7 +193,6 @@ a span {
 
 
 @media (max-width:770px){
-  @media screen and ( max-width:760px) {
     body{
         overflow-x: hidden;
     }
@@ -208,10 +207,8 @@ a span {
         display: block;
     }
     .logo {
-        margin-top:9px;
-      }
-}
-
+      margin-top:9px;
+    }
 
     #c2{
         width: 100%;
