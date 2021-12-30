@@ -27,6 +27,7 @@
   position:-webkit-sticky;
   top:0px;">
       <div class="logo">
+        <img src="logo.png" alt="" height="40px" width="40px">
         <p>Health-Partner</p>
       </div>
       <div class="links">
@@ -46,10 +47,11 @@
     <div class="center">
       <h1 class="tf" style="font-size: 2.5em; letter-spacing: 4px;" data-aos="fade-right">Detox Your
         Mental Health</h1>
+        
       <h3 id="c1"
         style="margin-top: 15px; font-size: 1.5em; font-family:cursive;font-weight: bold; letter-spacing: 2px;"></h3>
       <button id="aaaa" style="font-family: cursive;"><a href="solution .html"
-          style="color: white;">Read Here</a></button>
+          style="text-decoration: none; color: #171816;">Read Here</a></button>
     </div>
   </div>
   <div id="bd" style="background-color: #f8edeb;">
@@ -164,15 +166,13 @@
             </div>
           </div>
         </div>
+        
       </div>
-
-
-
-    </div>
+      </div>
     <div id="nxt">
       <footer class="footer-distributed">
 
-        <div class="footer-left" data-aos="zoom-in">
+        <div class="footer-left" >
           <h3><span id="xd">Health-Partner</span></h3>
 
           <p class=" footer-links">
@@ -186,7 +186,7 @@
           <p class="footer-company-name">© copyright 2021 COVID-INFO </p>
         </div>
 
-        <div class="footer-center" data-aos="zoom-in">
+        <div class="footer-center">
           <div>
             <i class="fa fa-map-marker"></i>
             <p><span style="color: black;"><b>Boring Road
@@ -197,7 +197,7 @@
 
 
         </div>
-        <div class="footer-right" data-aos="zoom-in">
+        <div class="footer-right" >
           <p class="footer-company-about">
             We try helping you in solving your real life problems Helping to maintain a good mental health for
             everyone
@@ -216,6 +216,25 @@
   </div>
 
   <script>
+
+const c = document.querySelectorAll(".cnt");
+      // val=parseInt(c);
+      j = 0;
+      inter = setInterval(() => {
+        c[0].innerHTML = j;
+        c[1].innerHTML = j;
+        c[2].innerHTML = j;
+        c[3].innerHTML = j;
+        j++;
+        console.log(i);
+        if (j == 1001) {
+          fun2();
+        }
+      }, -1000);
+      function fun2() {
+        clearInterval(inter);
+      }
+    
     const navSlide = () => {
       const burger = document.querySelector('.burger');
       const nav = document.querySelector('.links');
@@ -232,7 +251,7 @@
         });
         burger.classList.toggle(`toggle`);
       })
-
+      
 
     }
 
